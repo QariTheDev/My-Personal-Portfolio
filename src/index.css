@@ -8,6 +8,45 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --font-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  --background-color: #edf2f8;
+  --primary-color: #1f65e9;
+  --text-color: #282c34;
+  --link-color: navy;
+  --white-color: #ffffff;
+  --secondary-color: #34c6cb;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --box-shadow: rgba(0, 0, 0, 0.56);
+}
+
+[data-theme="dark"] {
+  --font-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  --background-color: #282c34;
+  --primary-color: #91d9ed;
+  --text-color: white;
+  --link-color: #61dafb;
+  --white-color: #c6c6c6;
+  --secondary-color: #34c6cb;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --box-shadow: rgba(245, 245, 245, 0.256);
 }
