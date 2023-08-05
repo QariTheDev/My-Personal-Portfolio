@@ -5,6 +5,7 @@ import { Navbar } from './components';
 function App() {
   return (
     <div className='app'>
+      {console.log( document.querySelector('body').getAttribute("data-theme"))}
       <Navbar />
       <Header />
       <About />

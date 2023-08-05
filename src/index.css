@@ -21,6 +21,7 @@ code {
 
 :root {
   --font-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --background: url('./assets/bgIMG.png');
 
   --background-color: #edf2f8;
   --primary-color: #1f65e9;
@@ -33,10 +34,13 @@ code {
   --gray-color: #6b7688;
   --brown-color: #46364a;
   --box-shadow: rgba(0, 0, 0, 0.56);
+  --about-bg-color: #F8F9F5;
+  --button-bg-color: #ffffff;
 }
 
 [data-theme="dark"] {
   --font-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --background: url('./assets/bgWhite2.png');
 
   --background-color: #282c34;
   --primary-color: #91d9ed;
@@ -46,7 +50,9 @@ code {
   --secondary-color: #34c6cb;
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
-  --gray-color: #6b7688;
+  --gray-color: #3d3d3d;
   --brown-color: #46364a;
   --box-shadow: rgba(245, 245, 245, 0.256);
+  --about-bg-color: #282C34;
+  --button-bg-color: rgba(25, 118, 210, 0.04);
 }

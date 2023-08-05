@@ -8,6 +8,10 @@
   background-color: var(--white-color);
 }
 
+.app__aboutbg{
+  background-color: var(--about-bg-color);
+}
+
 .app__primarybg {
   background-color: var(--primary-color);
 }
@@ -43,12 +47,14 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: right;
   align-items: flex-end;
+
+  margin-top: 4rem;
 
   p {
     text-transform: uppercase;
-    color: var(--black-color);
+    color: var(--text-color);
   }
 }
 
@@ -75,7 +81,7 @@
 .p-text {
   font-size: 0.8rem;
   text-align: left;
-  color: var(--gray-color);
+  color: var(--text-color);
   line-height: 1.5;
 
   @media screen and (min-width: 2000px) {
@@ -92,6 +98,10 @@
   @media screen and (min-width: 2000px) {
     font-size: 2rem;
   }
+}
+
+.img {
+  pointer-events: none;
 }
 
 .bold-text {
@@ -138,7 +148,7 @@
     }
 
     &:hover {
-      background-color: var(--secondary-color);
+      background-color: #313BAC;
       border-color: var(--secondary-color);
 
       svg {
@@ -178,7 +188,7 @@
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
-      background-color: var(--secondary-color);
+      background-color: #313BAC;
     }
 
     @media screen and (min-width: 2000px) {

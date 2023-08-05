@@ -1,6 +1,6 @@
 #home {
     position: relative;
-    background: url("../../assets/bgIMG.png");
+    background: var(--background);
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -58,6 +58,26 @@
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
+
+    button {
+      margin-top: 4rem;
+      text-align: right;
+
+      font-weight: 600;
+      
+      padding: 1rem 2rem;
+      background-color: var(--button-bg-color);
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px var(--box-shadow);
+      border: none;
+
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+      }
+    }
   
     .badge-cmp,
     .tag-cmp {
@@ -71,7 +91,12 @@
     }
 
     .badge-cmp {
-        margin-top: 2rem;
+      margin-top: 2rem;
+
+      @media screen and (min-width: 2000px) {
+          margin-top: 7rem;
+      }
+          
     }
   
     .tag-cmp {

@@ -37,6 +37,16 @@ import spotify from '../assets/spotify.png';
 
 import valorant from '../assets/valorant.png';
 import camera from '../assets/camera.png';
+import bgWhite2 from '../assets/bgWhite2.png';
+
+import cv from '../assets/cv.pdf';
+import cvorg from '../assets/cv.png';
+
+import beach from '../assets/beach.jpg';
+import fire from '../assets/fire.jpg';
+import wood from '../assets/wood.jpg';
+import mcdonalds from '../assets/mcdonalds.jpg';
+
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -75,4 +85,11 @@ export default {
   spotify,
   valorant,
   camera,
+  bgWhite2,
+  cv,
+  cvorg,
+  beach,
+  fire,
+  wood,
+  mcdonalds
 };

@@ -3,6 +3,8 @@ import { TypeAnimation } from 'react-type-animation';
 import './Header.scss'
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
+import { AppWrap, MotionWrap } from '../../wrapper';
+import Button from '@mui/material/Button';
 
 const scaleVariants = {
     whileInView: {
@@ -15,11 +17,10 @@ const scaleVariants = {
     }
 }
 
-
 const Header = () => {
 
   return (
-    <div id="header" className='app__header app__flex'>
+    <div className='app__header app__flex'>
       <motion.div
         whileInView={{x: [-100, 0], opacity: [0, 1]}}
         transition={{duration: 0.5}}
@@ -29,9 +30,9 @@ const Header = () => {
           <div className="badge-cmp app__flex">
             <span>👋</span>
             <div style={{marginLeft: 20}}>
-              <p className='p-text'>Hello, I am </p>
+              <p className='p-text' style={{color: 'black'}}>Hello, I am </p>
               <h1 className='head-text-name' style={{fontSize: '2.5rem'}}>Qari</h1>
-              <p className='p-text'>aka <strong style={{fontSize: '120%'}}>Talha</strong></p>
+              <p className='p-text' style={{color: 'black'}}>aka <strong style={{fontSize: '120%'}}>Talha</strong></p>
             </div>
           </div>
 
@@ -58,6 +59,11 @@ const Header = () => {
               />
             </h1>
           </div>
+          
+          <a href={images.cv} download="MyCV">
+            <Button className='button' variant="outlined" size="medium"> Download CV </Button>
+          </a>
+
         </div>
       </motion.div>
 
@@ -93,4 +99,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default AppWrap( MotionWrap(Header, 'app__header'), 'home')
