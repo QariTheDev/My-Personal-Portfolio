@@ -45,6 +45,10 @@ export default {
          }
        ]
       },
-     
+      {
+        name: 'isTop',
+        title: 'is Top?',
+        type: 'boolean'
+      },
     ],
   };
